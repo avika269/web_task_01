@@ -80,3 +80,18 @@ main {
   color: green;
   font-weight: bold;
 }
+.unavailable {
+  color: red;
+  font-weight: bold;
+}
+.category{
+  display:inline-block;
+  background:#eee7ff;
+  color: #6c5ce7;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  margin-bottom: 10px;
+
+}
+
