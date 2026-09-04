@@ -1,0 +1,54 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#f5f5ff;
+  color: #333;
+}
+
+header{
+  background: #6c5ce7;
+  color:white;
+  text-align:center;
+  padding: 35ps 20px;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+main {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+}
+.search-box{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  display:flex;
+  gap:10px;
+  margin-bottom:25px;
+
+}
+.search-box input,
+.search-box select{
+  flex:1;
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  font-size:15px;
+
+}
+.info {
+  margin-bottom: 20px;
+}
+.info h2 {
+  color: #6c5ce7;
+  margin-bottom: 5px;
+}
+
