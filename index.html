@@ -1,77 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBites - College Canteen</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
- 
-  <header>
-    <div class="header-left">
-      <div class="food-icon">&#127860;</div>
-      <div>
-         <h1>College Canteen menu Finder</h1>
-         <h2>Find your favuorite food easily</h2>
-      </div>
-    </div>
-    <div class="date">
-      
-      <div>
-        <b>Today's Menu</b>
-        <p>4 May 2025</p>
-      </div>
-    </div>
-    
-   
-  </header>
-  
-  <main>
-    <section class="search-box">
-      <input type="text" id="searchInput" placeholder="search your favourite food...">
-       
-      
-      <select id="Categories">
-        <option value="all">Categories</option>
-        <option value="Breakfast">Breakfast</option>
-        <option value="Lunch">Lunch</option>
-        <option value="Snacks">Snacks</option>
-        <option value="Drinks">Drinks</option>
 
-      </select>
+    <header>
 
-      <select id="type">
-        <option value="vegetarian">Vegetarian</option>
-        <option value="Non-vegetarian">Non-Vegetarian</option>
-        <option value="both">Both</option>
-      </select>
-      <select id="sort">
-        <option value="default">Sort by Price</option>
-        <option value="low">Low to High</option>
-          <option value="high">High to Low</option>
-            </select>
-      
+        <div class="logo-section">
+            <div class="logo">CB</div>
 
-          </section>
-          <section class="menu-display">
-               <div class="menu-heading">
-        <div>
-          <h2>Today's Menu</h2>
-          <p>Total 12 items available</p>
+            <div>
+                <h2>CampusBites</h2>
+                <p>College Canteen</p>
+            </div>
         </div>
-         <div class="availability">
-                <span class="available-dot">●</span> Available
-                <span class="unavailable-dot">●</span> Not Available
-          </div>
-      </div>
-          </section>
-      
-      <section id="menucontainer"></section>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for food, drinks, cuisines..."
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+        <div class="header-links">
+
+            <span>Favorites</span>
+
+            <span class="cart">
+                Cart
+                <b id="cartCount">0</b>
+            </span>
+
+            <span>Account</span>
+
+        </div>
+
+    </header>
 
 
-    
-  </main>
-  
+    <aside>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#menu">Menu</a>
+
+            <a href="#categories">Categories</a>
+
+            <a href="#specials">Today's Specials</a>
+
+            <a href="#orders">Orders</a>
+
+            <a href="#reservations">My Reservations</a>
+
+            <a href="#reviews">Reviews</a>
+
+            <a href="#notifications">Notifications</a>
+
+            <a href="#support">Support</a>
+
+        </nav>
+
+
+        <div class="student-deal">
+
+            <span>Student Deal</span>
+
+            <h3>Get 15% OFF</h3>
+
+            <p>on orders above ₹149</p>
+
+            <button id="studentDealBtn">
+                Order Now
+            </button>
+
+            <img
+                id="studentDealImage"
+                src=""
+                alt="Student Deal"
+            >
+
+        </div>
+
+    </aside>
+
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <small>GOOD FOOD, GOOD MOOD.</small>
+
+                <h1>
+                    Great Food,
+                    <span>Right on Campus.</span>
+                </h1>
+
+                <p>
+                    Your favorite canteen meals,
+                    delivered fast to your classroom,
+                    hostel or anywhere on campus.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button id="orderBtn">
+                        Order Now
+                    </button>
+
+                    <button id="menuBtn">
+                        Explore Menu
+                    </button>
+
+                </div>
+
+                <div class="students">
+                    <strong>10K+</strong>
+                    Happy Students
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img
+                    id="heroImage"
+                    src=""
+                    alt="Campus food"
+                >
+
+                <div class="hero-food-card">
+
+                    <h3>Veg Paneer Burger</h3>
+
+                    <p>
+                        Crispy · Fresh · Delicious
+                    </p>
+
+                    <strong>₹79</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="features">
+
+            <div class="feature">
+                <h3>Fast Delivery</h3>
+                <p>On campus in 20 min</p>
+            </div>
+
+            <div class="feature">
+                <h3>Hygienic Food</h3>
+                <p>100% quality assured</p>
+            </div>
+
+            <div class="feature">
+                <h3>Affordable Prices</h3>
+                <p>Pocket friendly meals</p>
+            </div>
+
+            <div class="feature">
+                <h3>Easy Payments</h3>
+                <p>UPI, Cards and Wallets</p>
+            </div>
+
+            <div class="feature">
+                <h3>24/7 Support</h3>
+                <p>We are here to help</p>
+            </div>
+
+        </section>
+
+
+        <section class="categories-section" id="categories">
+
+            <div class="section-heading">
+
+                <h2>Explore by Categories</h2>
+
+                <button id="viewAllCategories">
+                    View All
+                </button>
+
+            </div>
+
+            <div
+                class="categories"
+                id="categoriesContainer"
+            ></div>
+
+        </section>
+
+
+        <section class="menu-section" id="menu">
+
+            <div class="section-heading">
+
+                <h2>Popular This Week</h2>
+
+                <button id="viewAll">
+                    View All
+                </button>
+
+            </div>
+
+            <div
+                class="food-container"
+                id="foodContainer"
+            ></div>
+
+            <p
+                class="no-food"
+                id="noFood"
+            >
+                No food items found.
+            </p>
+
+        </section>
+
+
+        <section class="offers" id="specials">
+
+            <div class="offer first-offer">
+
+                <div class="offer-content">
+
+                    <small>LIMITED TIME OFFER</small>
+
+                    <h2>Flat 20% OFF</h2>
+
+                    <h3>On Your First Order!</h3>
+
+                    <p>
+                        Use code WELCOME20 at checkout.
+                    </p>
+
+                    <button id="firstOrder">
+                        Order Now
+                    </button>
+
+                </div>
+
+                <img
+                    id="firstOrderImage"
+                    src=""
+                    alt="First order offer"
+                >
+
+            </div>
+
+
+            <div class="offer thali-offer">
+
+                <div class="offer-content">
+
+                    <small>WEEKEND SPECIAL</small>
+
+                    <h2>Thali Combo</h2>
+
+                    <h3>Starting at ₹99</h3>
+
+                    <p>
+                        Complete meal with main course,
+                        rice, roti, sabzi and salad.
+                    </p>
+
+                    <button id="thaliBtn">
+                        Order Now
+                    </button>
+
+                </div>
+
+                <img
+                    id="thaliComboImage"
+                    src=""
+                    alt="Thali Combo"
+                >
+
+            </div>
+
+        </section>
+
+
+        <section class="trusted">
+
+            <h2>
+                Trusted by Thousands of Students
+            </h2>
+
+            <div class="colleges">
+
+                <div>
+                    <strong>IIT</strong>
+                    <span>Institute</span>
+                </div>
+
+                <div>
+                    <strong>NIT</strong>
+                    <span>Institute</span>
+                </div>
+
+                <div>
+                    <strong>BITS</strong>
+                    <span>Pilani</span>
+                </div>
+
+                <div>
+                    <strong>SRM</strong>
+                    <span>University</span>
+                </div>
+
+                <div>
+                    <strong>VIT</strong>
+                    <span>University</span>
+                </div>
+
+                <div>
+                    <strong>& Many More</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <h2>CampusBites</h2>
+
+            <p>
+                Delicious food, delivered fast
+                anywhere on campus.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Company</h3>
+
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="#menu">Menu</a>
+            <a href="#categories">Categories</a>
+            <a href="#specials">Today's Specials</a>
+            <a href="#orders">My Orders</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Support</h3>
+
+            <a href="#">Help Center</a>
+            <a href="#">Track Order</a>
+            <a href="#">Returns</a>
+            <a href="#">FAQs</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Legal</h3>
+
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Refund Policy</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Newsletter</h3>
+
+            <p>
+                Subscribe to get latest updates
+                and exclusive offers.
+            </p>
+
+            <div class="newsletter">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                >
+
+                <button id="subscribeBtn">
+                    Subscribe
+                </button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
