@@ -10,7 +10,7 @@
  
   <header>
     <div class="header-left">
-      <div class="food-icon">&#127860</div>
+      <div class="food-icon">&#127860;</div>
       <div>
          <h1>College Canteen menu Finder</h1>
          <h2>Find your favuorite food easily</h2>
@@ -26,21 +26,13 @@
     
    
   </header>
-   <nav calss="navbar">
-    <div class="logo">College Canteen</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#Categories">Categories</a></li>
-      <li><a href="#type">Types</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </nav>
+  
   <main>
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="search your favourite food">
+    <section class="search-box">
+      <input type="text" id="searchInput" placeholder="search your favourite food...">
       
       <select id="Categories">
-        <option value="all">Select All</option>
+        <option value="all">Categories</option>
         <option value="Breakfast">Breakfast</option>
         <option value="Lunch">Lunch</option>
         <option value="Snacks">Snacks</option>
@@ -60,8 +52,9 @@
             </select>
       
 
-      </div>
-      <div class="menu-heading">
+          </section>
+          <section class="menu-display">
+               <div class="menu-heading">
         <div>
           <h2>🍽️ Today's Menu</h2>
           <p>Total 12 items available</p>
@@ -71,6 +64,8 @@
                 <span class="unavailable-dot">●</span> Not Available
           </div>
       </div>
+          </section>
+      
       <section id="menucontainer"></section>
 
 
