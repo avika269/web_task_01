@@ -88,11 +88,9 @@ header p{
   color: #4739a7;
 }
 main {
-    width: 95%;
-
-    max-width: 1400px;
-
-    margin: 25px auto;
+  width: 95%;
+  max-width: 1400px;
+  margin: 25px auto;
 }
 .search-box{
   background:white;
@@ -175,17 +173,13 @@ main {
   color: #2d3436;
 }
 .available {
-
-    color: green;
-
-    font-weight: bold;
+  color: green;
+  font-weight: bold;
 }
 
 .unavailable {
-
-    color: red;
-
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
 .Categories{
@@ -202,35 +196,30 @@ main {
 @media (max-width: 700px) {
 
   .search-box {
-      flex-direction: column;
+    flex-direction: column;
     }
   .header-left {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     .navbar {
-        flex-direction: column;
-
-        gap: 15px;
+      flex-direction: column;
+      gap: 15px;
     }
 
     .nav-links {
-        gap: 15px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .search-box {
-        flex-direction: column;
+      flex-direction: column;
     }
     .menu-heading {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
     }
   
 }
