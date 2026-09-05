@@ -4,15 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
   <header>
-    <h1>College Canteen menu Finder</h1>
-   <h2>Find your favuorite food easily</h2>
+    <div class="header-left">
+      <div class="food-icon">&#127860</div>
+      <div>
+         <h1>College Canteen menu Finder</h1>
+         <h2>Find your favuorite food easily</h2>
+      </div>
+    </div>
+    <div class="date">
+      <span>📅</span>
+      <div>
+        <b>Today's Menu</b>
+        <p>4 May 2025</p>
+      </div>
+    </div>
+    
+   
   </header>
+   <nav calss="navbar">
+    <div class="logo">College Canteen</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#Categories">Categories</a></li>
+      <li><a href="#type">Types</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
   <main>
-    <section calss="search-box">
+    <div class="search-box">
       <input type="text" id="searchInput" placeholder="search your favourite food">
+      
       <select id="Categories">
         <option value="all">Select All</option>
         <option value="Breakfast">Breakfast</option>
@@ -27,12 +53,24 @@
         <option value="Non-vegetarian">Non-Vegetarian</option>
         <option value="both">Both</option>
       </select>
-      <section class="info">
-        <h2>Today's Menu</h2>
-        <p id="itemCount">Loading...</p>
-        </section>
+      <select id="sort">
+        <option value="default">Sort by Price</option>
+        <option value="low">Low to High</option>
+          <option value="high">High to Low</option>
+            </select>
+      
 
-      </section>
+      </div>
+      <div class="menu-heading">
+        <div>
+          <h2>🍽️ Today's Menu</h2>
+          <p>Total 12 items available</p>
+        </div>
+         <div class="availability">
+                <span class="available-dot">●</span> Available
+                <span class="unavailable-dot">●</span> Not Available
+          </div>
+      </div>
       <section id="menucontainer"></section>
 
 
