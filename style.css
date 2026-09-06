@@ -880,8 +880,6 @@ footer a:hover {
     flex-wrap: wrap;
 }
 
-
-/* Individual college box */
 .colleges > div {
     width: 130px;
     height: 120px;
@@ -916,7 +914,7 @@ footer a:hover {
     color: #777;
     margin-top: 3px;
 }
-/* FEATURES */
+
 
 .features {
     display: grid;
